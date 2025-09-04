@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* *=========== Default theme =========== */
+/* @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 240 4.9% 83.9%;
+  }
+} */
+
+/* *=========== Orange theme =========== */
+ /* *=========== Red theme =========== */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 84% 60%; /* Bright red */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 20% 95%; /* Light red background */
+    --secondary-foreground: 0 60% 20%;
+
+    --muted: 0 20% 95%;
+    --muted-foreground: 0 10% 40%;
+
+    --accent: 0 20% 95%;
+    --accent-foreground: 0 60% 20%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 84% 60%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 15% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 15% 20%;
+    --muted-foreground: 0 10% 60%;
+
+    --accent: 0 15% 20%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 15% 20%;
+    --input: 0 15% 20%;
+    --ring: 0 70% 50%;
+  }
+}
+/* Custom styles for blog HTML rendered via v-html */
+.blog-html {
+  line-height: 1.75;
+  font-size: 1rem;
+  word-break: break-word;
+  color: inherit;
+}
+
+/* Headings */
+.blog-html h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 1.5rem 0 1rem;
+}
+.blog-html h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.875rem;
+}
+.blog-html h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0 0.75rem;
+}
+.blog-html h4,
+.blog-html h5,
+.blog-html h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.5rem;
+}
+
+/* Paragraph */
+.blog-html p {
+  margin: 1rem 0;
+}
+
+/* Lists */
+ 
+
+/* Blockquote */
+.blog-html blockquote {
+  padding-left: 1rem;
+  border-left: 4px solid #94a3b8;
+  color: #64748b;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+/* Anchor (links) */
+.blog-html a {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.blog-html a:hover {
+  color: #2563eb;
+}
+
+/* Images */
+.blog-html img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* Code blocks */
+.blog-html pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+.blog-html code {
+  background: #e2e8f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-family: 'Fira Code', monospace;
+  color: #1e293b;
+}
+
+/* Tables */
+.blog-html table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.blog-html th,
+.blog-html td {
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem;
+  text-align: left;
+}
+.blog-html th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+/* Horizontal rule */
+.blog-html hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Strong/emphasis */
+.blog-html strong {
+  font-weight: 700;
+}
+.blog-html em {
+  font-style: italic;
+}
+
+.dark .blog-html blockquote {
+  border-left-color: #475569;
+  color: #94a3b8;
+}
+
+.dark .blog-html a {
+  color: #60a5fa;
+}
+.dark .blog-html a:hover {
+  color: #3b82f6;
+}
+
+.dark .blog-html pre {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.dark .blog-html code {
+  background: #334155;
+  color: #e0f2fe;
+}
+
+/* Custom scrollbar only for modal scroll */
+.scrollbar-custom {
+  scrollbar-width: thin;               /* Firefox */
+  scrollbar-color: #323232 #1f1f1f;    /* Firefox: thumb, track */
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px; /* Thin scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #1f1f1f; /* Dark track */
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #323232; /* Red thumb */
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #323232; /* Darker red on hover */
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
