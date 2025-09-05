@@ -53,7 +53,7 @@ const isLoading = ref(true); // Loading state
 const fetchProject = async () => {
   isLoading.value = true;
   try {
-    const response = await axios.get(`https://v3-cn-backend.vercel.app/api/project/v1/${projectId}`);
+    const response = await axios.get(`https://blackhatbrew-backend.vercel.app/api/project/v1/${projectId}`);
     if (response.data.success) {
       const apiProject = response.data.project;
       project.value = {
