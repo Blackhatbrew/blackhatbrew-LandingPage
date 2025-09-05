@@ -29,7 +29,7 @@ onMounted(async () => {
     const id = route.params.slug;
      if (!id) throw new Error("Blog ID not found in route.");
 
-    const response = await fetch(`https://v3-cn-backend.vercel.app/api/blog/v1/${id}`);
+    const response = await fetch(`https://blackhatbrew-backend.vercel.app/api/blog/v1/${id}`);
     const result = await response.json();
 
     if (result.success) {
