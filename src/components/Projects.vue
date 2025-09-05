@@ -54,7 +54,7 @@ const filteredProjects = computed(() =>
 // Function to fetch projects from the API
 const fetchProjects = async () => {
   try {
-    const response = await axios.get("https://v3-cn-backend.vercel.app/api/project/v1"); // Adjust URL as needed
+    const response = await axios.get("https://blackhatbrew-backend.vercel.app/api/project/v1"); // Adjust URL as needed
     projects.value = response.data.projects.map((project: any) => ({
       ...project,
       id: project._id || project.id, // Use _id from MongoDB or fallback to id
