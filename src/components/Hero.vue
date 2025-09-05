@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 </script>
 
 <template>
-  <section class="container">
+  <section id="home" class="container">
     <div class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
       <div class="text-center space-y-8">
         <Badge variant="outline" class="text-sm py-2">
