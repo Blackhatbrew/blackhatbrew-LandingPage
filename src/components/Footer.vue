@@ -30,7 +30,7 @@
           <h3 class="font-bold text-lg">Contact</h3>
           <div>
             <a
-              href=""
+              href="https://github.com/orgs/Blackhatbrew"
               class="opacity-60 hover:opacity-100"
             >
               Github
