@@ -80,7 +80,7 @@ const FAQList: FAQProps[] = [
     <h3 class="font-medium mt-4">
       Still have questions?
       <a
-        href="#"
+        href="#contact"
         class="text-muted-foreground underline"
       >
       Contact us
