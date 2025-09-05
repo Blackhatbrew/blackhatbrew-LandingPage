@@ -26,7 +26,7 @@ const loading = ref(true);
 
 onMounted(async () => {
   try {
-    const response = await fetch("https://v3-cn-backend.vercel.app/api/blog/v1", {
+    const response = await fetch("https://blackhatbrew-backend.vercel.app/api/blog/v1", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
