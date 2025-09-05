@@ -48,7 +48,7 @@ const handleSubmit = async () => {
   errorMessage.value = null;
 
   try {
-    const response = await fetch("https://v3-cn-backend.vercel.app/api/contact/v1", {
+    const response = await fetch("https://blackhatbrew-backend.vercel.app/api/contact/v1", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(contactForm),
