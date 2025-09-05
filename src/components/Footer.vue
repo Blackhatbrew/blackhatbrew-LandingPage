@@ -30,7 +30,7 @@
           <h3 class="font-bold text-lg">Contact</h3>
           <div>
             <a
-              href="#"
+              href=""
               class="opacity-60 hover:opacity-100"
             >
               Github
@@ -39,7 +39,7 @@
 
           <div>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/blackhatbrew"
               class="opacity-60 hover:opacity-100"
             >
               LinkedIn
