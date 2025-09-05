@@ -94,7 +94,7 @@ const handleSubmit = async () => {
               <Phone />
               <div class="font-bold">Call Us</div>
             </div>
-            <div>+1 (619) 123-4567</div>
+            <div>+1 (618) 203-0104</div>
           </div>
 
           <div>
@@ -139,7 +139,7 @@ const handleSubmit = async () => {
               <Input
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder="info@blackhatbrew.com"
                 v-model="contactForm.email"
               />
             </div>
