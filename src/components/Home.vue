@@ -24,6 +24,7 @@ import Blog from "./Blog.vue";
   <Projects />
   <HowItWorks /> 
   <Testimonials />
+  <Certificate />
   <Team />
   <Community />
   <!-- <Pricing /> -->
