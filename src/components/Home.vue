@@ -6,6 +6,7 @@ import Features from "./Features.vue";
 import Projects from "./Projects.vue";
 import HowItWorks from "./HowItWorks.vue";
  import Testimonials from "./Testimonials.vue";
+// @ts-ignore
 import Certificate from "./Certificate.vue";
 import Team from "./Team.vue";
 import Community from "./Community.vue";
