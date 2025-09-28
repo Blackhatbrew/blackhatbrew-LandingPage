@@ -11,7 +11,7 @@ const certificates = [
 <template>
   <section class="bg-gray-950 text-white py-10 px-6">
     <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
-      📜 My Certificates
+      📜 Team Certificates
     </h2>
 
     <!-- Scrollable container -->
