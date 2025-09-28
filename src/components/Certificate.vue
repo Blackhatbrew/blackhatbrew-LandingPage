@@ -1,7 +1,7 @@
 <script setup>
 const certificates = [
-  { id: 1, title: "Web Development", image: "/Public/PNPT.png" },
-  { id: 2, title: "JavaScript Mastery", image: "/Public/PT1.png" },
+  { id: 1, title: "Practical Network Penetration Testing", image: "/Public/PNPT.png" },
+  { id: 2, title: "Tryhackme PT1", image: "/Public/PT1.png" },
   { id: 3, title: "Cybersecurity", image: "/certificates/cyber.png" },
   { id: 4, title: "AI & ML", image: "/certificates/ai.png" },
   { id: 5, title: "Cloud Computing", image: "/certificates/cloud.png" },
