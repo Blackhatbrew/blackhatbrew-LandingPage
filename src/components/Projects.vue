@@ -17,8 +17,8 @@ enum ProProject {
 }
 
 // Type for project categories
-type Category = "All" | "Ongoing" | "Completed" | "Internal";
-const tabs: Category[] = ["All", "Ongoing", "Completed", "Internal"];
+type Category = "All" | "Ongoing" | "Completed" | "On-Demand";
+const tabs: Category[] = ["All", "Ongoing", "Completed", "On-Demand"];
 
 // Interface for project properties, aligned with Mongoose schema
 interface ProjectProps {
