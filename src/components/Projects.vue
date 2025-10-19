@@ -254,13 +254,14 @@ const goToProjectDetail = (id: string) => {
 
     <!-- Dots Indicator -->
     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-      <span
-        v-for="(img, i) in selectedProject.images"
-        :key="i"
-        class="w-3 h-3 rounded-full cursor-pointer transition-all duration-300"
-        :class="i === currentImageIndex ? 'bg-red-500 scale-110' : 'bg-gray-400 hover:bg-gray-300'"
-        @click="currentImageIndex = i"
-      ></span>
+    <span
+  v-for="(_, i) in selectedProject.images"
+  :key="i"
+  class="w-3 h-3 rounded-full cursor-pointer transition-all duration-300"
+  :class="i === currentImageIndex ? 'bg-red-500 scale-110' : 'bg-gray-400 hover:bg-gray-300'"
+  @click="currentImageIndex = i"
+></span>
+
     </div>
   </div>
 </div>
