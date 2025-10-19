@@ -90,19 +90,22 @@ const closeModal = () => {
   selectedProject.value = null;
 };
 
-// Carousel navigation
+
 const nextImage = () => {
-  if (selectedProject.value?.images) {
-    currentImageIndex.value = (currentImageIndex.value + 1) % selectedProject.value.images.length;
+  if (selectedProject.value?.images?.length) {
+    currentImageIndex.value =
+      (currentImageIndex.value + 1) % selectedProject.value.images.length;
   }
 };
 
 const prevImage = () => {
-  if (selectedProject.value?.images) {
+  if (selectedProject.value?.images?.length) {
     currentImageIndex.value =
-      (currentImageIndex.value - 1 + selectedProject.value.images.length) % selectedProject.value.images.length;
+      (currentImageIndex.value - 1 + selectedProject.value.images.length) %
+      selectedProject.value.images.length;
   }
 };
+
 
 // Navigate to project detail page
 const goToProjectDetail = (id: string) => {
@@ -208,36 +211,60 @@ const goToProjectDetail = (id: string) => {
           >PRO</Badge>
         </div>
 
-        <!-- Image Carousel -->
-        <div
-          v-if="selectedProject.images && selectedProject.images.length"
-          class="mt-6 px-6"
-        >
-          <div class="relative w-full h-64">
-            <img
-              :key="currentImageIndex"
-              :src="selectedProject.images[currentImageIndex].url"
-              alt="Project Image"
-              class="w-full h-full object-cover rounded-lg shadow-md transition-opacity duration-300 ease-in-out"
-            />
-            <button
-              v-if="selectedProject.images.length > 1"
-              @click="prevImage"
-              type="button"
-              class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none focus:ring-0"
-            >
-              &larr;
-            </button>
-            <button
-              v-if="selectedProject.images.length > 1"
-              @click="nextImage"
-              type="button"
-              class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none focus:ring-0"
-            >
-              &rarr;
-            </button>
-          </div>
-        </div>
+     <!-- Image Carousel -->
+<div
+  v-if="selectedProject.images && selectedProject.images.length"
+  class="mt-6 px-6"
+>
+  <div class="relative w-full max-w-5xl mx-auto overflow-hidden rounded-xl shadow-lg bg-black/20">
+    <!-- Image Container -->
+    <div
+      class="flex transition-transform duration-700 ease-in-out"
+      :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }"
+    >
+      <div
+        v-for="(img, index) in selectedProject.images"
+        :key="index"
+        class="flex-shrink-0 w-full h-[50vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center bg-gray-950"
+      >
+        <img
+          :src="img.url"
+          :alt="`Image ${index + 1}`"
+          class="max-w-full max-h-full object-contain rounded-lg transition-opacity duration-500 ease-in-out"
+        />
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button
+      v-if="selectedProject.images.length > 1"
+      @click="prevImage"
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 focus:outline-none transition"
+    >
+      &larr;
+    </button>
+
+    <button
+      v-if="selectedProject.images.length > 1"
+      @click="nextImage"
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 focus:outline-none transition"
+    >
+      &rarr;
+    </button>
+
+    <!-- Dots Indicator -->
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <span
+        v-for="(img, i) in selectedProject.images"
+        :key="i"
+        class="w-3 h-3 rounded-full cursor-pointer transition-all duration-300"
+        :class="i === currentImageIndex ? 'bg-red-500 scale-110' : 'bg-gray-400 hover:bg-gray-300'"
+        @click="currentImageIndex = i"
+      ></span>
+    </div>
+  </div>
+</div>
+
 
         <!-- Description -->
         <div class="px-6 mt-6">
@@ -269,7 +296,7 @@ const goToProjectDetail = (id: string) => {
         </div>
 
         <!-- Take Me to Lab Button -->
-        <div class="px-6 pb-6 text-center">
+        <div class="px-6 pb-6 text-center mt-8">
           <button
             @click="goToProjectDetail(selectedProject.id)"
             class="inline-block bg-red-600 text-white px-6 py-2 rounded-full font-medium hover:bg-red-700 transition-colors duration-300"

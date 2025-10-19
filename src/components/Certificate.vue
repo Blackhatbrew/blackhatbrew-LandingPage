@@ -9,7 +9,7 @@ const certificates = [
 </script>
 
 <template>
-  <section class="bg-gray-950 text-white py-10 px-6">
+  <section class="bg-gray-950 text-white py-10 px-6" id="certificate">
     <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
       📜 Team Certificates
     </h2>

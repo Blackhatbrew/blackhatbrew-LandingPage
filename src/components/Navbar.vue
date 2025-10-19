@@ -56,6 +56,10 @@ const routeList: RouteProps[] = [
     href: "#blog",
     label: "Blogs",
   },
+     {
+    href: "#certificate",
+    label: "Certificates",
+  },
 ];
 
 const featureList: FeatureProps[] = [
