@@ -26,7 +26,7 @@ const certificates = [
          Team Certificates
       </h2>
       <p class="text-[hsl(var(--muted-foreground))] mt-3 text-sm md:text-base">
-        Recognizing excellence in cybersecurity, AI, and innovation.
+        Recognizing excellence in cybersecurity.
       </p>
     </div>
 
