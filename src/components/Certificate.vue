@@ -3,8 +3,8 @@ const certificates = [
   { id: 1, title: "Practical Network Penetration Testing", image: "/certificates/PNPT.png" },
   { id: 2, title: "Tryhackme PT1", image: "/certificates/PT1.png" },
   { id: 3, title: "CRTO", image: "/certificates/CRTO.jpg" },
-  { id: 4, title: "AI & ML", image: "/certificates/ai.png" },
-  { id: 5, title: "Cloud Computing", image: "/certificates/cloud.png" },
+  { id: 4, title: "Certified Appsec Practitioner", image: "/certificates/APPSEC.png" },
+  { id: 5, title: "IC2", image: "/certificates/IC2.png" },
 ];
 </script>
 
