@@ -4,7 +4,7 @@ const certificates = [
   { id: 2, title: "Tryhackme PT1", image: "/certificates/PT1.png" },
   { id: 3, title: "CRTO", image: "/certificates/CRTO.jpg" },
   { id: 4, title: "Certified Appsec Practitioner", image: "/certificates/APPSEC.png" },
-  { id: 5, title: "IC2", image: "/certificates/IC2.png" },
+  { id: 5, title: "ISC2", image: "/certificates/ISC2.png" },
 ];
 </script>
 
