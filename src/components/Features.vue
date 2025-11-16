@@ -20,7 +20,7 @@ interface FeaturesProps {
 
  const featureList: FeaturesProps[] = [
   {
-    icon: "goal",
+    icon: "tabletSmartphone",
     title: "Red Team CTF Labs",
     description:
       "Access your red team training environment anywhere—designed for desktop and mobile devices without compromising performance.",
