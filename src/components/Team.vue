@@ -26,7 +26,7 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl:"/user_m.jpeg",
+    imageUrl:"/user_m.jpg",
     firstName: "Muhammad",
     lastName: "Arafat",
     positions: ["Founder"],
