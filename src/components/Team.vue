@@ -66,7 +66,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl:"/user.jpeg",
+    imageUrl:"/user_a.jpeg",
     firstName: "Ahmed",
     lastName: "Pinger",
     positions: ["Co-Founder" ],
